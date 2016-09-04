@@ -2,9 +2,10 @@
 **A linked list, in its simplest form, is a collection of nodes that collectively form a linear sequence. In a singly linked list, each node stores a reference to an object that is an element of the sequence, as well as a reference to the next node of the list.**
 
 # Operation
+
 ## Insert a new element at the beginning of a singly linked list
 
-``` Pseudo code
+```java
     Algorithm addFirst(e):
         newest = Node(e)
         newest.next = head;
@@ -14,7 +15,7 @@
 
 ## Insert a new element at the tail of a singly linked list
 
-```Pseduo code
+```java
     Algorithm addLast(e):
         newest = Node(e);
         newest.next = null;
@@ -24,7 +25,8 @@
 ```
 
 ## Remove an element from a singly linked list
-```Pseduo code
+
+```java
     Algorithm removeFirst():
         if head == null then
             the list is empty.
@@ -35,7 +37,7 @@
 ***We cannot easily delete the last node of a singly lined list. Even if we maintain a reference directly to the last node of the list, we must beable to access the node before the last node in order to remove the last node. But we cannot reach the node before the tail by following next links from the tail. ___ The only way to access this node is to start from the head of the list and search all the way through the list___. But such a sequence of link-hopping operations could take a long time. This is why ___dboule linked list___ is needed.***
 
 # Supported Interfaces:
-``` java
+```java
     size()
     isEmpty()
     first()
