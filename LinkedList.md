@@ -3,6 +3,7 @@
 
 # Operation
 **Insert a new element at the beginning of a singly linked list**
+
 ``` Pseudo code
     Algorithm addFirst(e):
         newest = Node(e)
@@ -12,6 +13,7 @@
 ```
 
 **Insert a new element at the tail of a singly linked list**
+
 ```Pseduo code
     Algorithm addLast(e):
         newest = Node(e);
@@ -20,6 +22,7 @@
         tail = newest;
         size += 1;
 ```
+
 **Remove an element from a singly linked list**
 ```Pseduo code
     Algorithm removeFirst():
@@ -32,7 +35,7 @@
 **We cannot easily delete the last node of a singly lined list. Even if we maintain a reference directly to the last node of the list, we must beable to access the node before the last node in order to remove the last node. But we cannot reach the node before the tail by following next links from the tail. ___ The only way to access this node is to start from the head of the list and search all the way through the list___. But such a sequence of link-hopping operations could take a long time. This is why ___dboule linked list___ is needed.**
 
 **Supported Interfaces:**
-```c 
+``` java
     size()
     isEmpty()
     first()
@@ -41,7 +44,6 @@
     addLast()
     removeFirst()
 ```
-**
 
 **Java implementation**
 ```Java
