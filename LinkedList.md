@@ -1,9 +1,8 @@
 # Lined list
-** 
-A linked list, in its simplest form, is a collection of nodes that collectively form a linear sequence. In a singly linked list, each node stores a reference to an object that is an element of the sequence, as well as a reference to the next node of the list. **
+**A linked list, in its simplest form, is a collection of nodes that collectively form a linear sequence. In a singly linked list, each node stores a reference to an object that is an element of the sequence, as well as a reference to the next node of the list.**
 
 # Operation
-** Insert a new element at the beginning of a singly linked list**
+**Insert a new element at the beginning of a singly linked list**
 ``` Pseudo code
     Algorithm addFirst(e):
         newest = Node(e)
@@ -12,7 +11,7 @@ A linked list, in its simplest form, is a collection of nodes that collectively 
         size += 1;
 ```
 
-** Insert a new element at the tail of a singly linked list**
+**Insert a new element at the tail of a singly linked list**
 ```Pseduo code
     Algorithm addLast(e):
         newest = Node(e);
@@ -21,7 +20,7 @@ A linked list, in its simplest form, is a collection of nodes that collectively 
         tail = newest;
         size += 1;
 ```
-** Remove an element from a singly linked list
+**Remove an element from a singly linked list**
 ```Pseduo code
     Algorithm removeFirst():
         if head == null then
